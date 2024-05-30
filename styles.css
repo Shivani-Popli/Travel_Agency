@@ -1,0 +1,242 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Letter spacing for emphasis */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav ul li a:hover {
+    color: #ff6b6b; /* Change color on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Index page styles */
+
+#hero {
+    background-image: url('images/index.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero-content {
+    position: absolute; /* Position relative to the hero section */
+    top: 260px; 
+    left: 20px; 
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.hero-content h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.hero-content p {
+    margin-bottom: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.hero-content .btn {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.hero-content .btn:hover {
+    background-color: #ff4f4f;
+}
+
+/* Form page styles */
+
+#tripCalculator {
+    background-image: url('images/form.jpg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #fff; /* Text color on top of the background */
+}
+
+#tripCalculator h2 {
+    color: #fff;
+    font-size: 36px; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for emphasis */
+    text-align: center; /* Center align the heading */
+}
+
+#tripCalculator .costCalculatorForm {
+    max-width: 400px; 
+    margin: 0 auto; /* Center the form horizontally */
+}
+
+#costCalculatorForm {
+    background-color: rgba(227, 232, 225, 0.7); /* Add a semi-transparent white background to improve readability */
+    padding: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#costCalculatorForm label {
+    color: #333; /* Color of labels */
+}
+
+#costCalculatorForm input[type="text"],
+#costCalculatorForm input[type="number"],
+#costCalculatorForm button {
+    width: calc(100% - 22px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Adding margin-bottom for better spacing between elements */
+}
+
+#costCalculatorForm button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#costCalculatorForm button:hover {
+    background-color: #555;
+}
+
+#costResult {
+    color: white; /* Change this to a color that contrasts with your background */
+    font-size: 20px; /* Optional: Increase font size for better readability */
+    margin-top: 20px;
+    padding: 10px; /* Add padding for better spacing */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent black background */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    text-shadow: 
+        -1px -1px 0 #000,  
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+} /* Ensure this closing brace is here */
+
+/* Contact Page Styles */
+#contactForm {
+    background-color: #ccc;
+    background-image: url(); 
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    color: #333; /* Text color on top of the background */
+}
+
+#customInquiryForm {
+    background-color: rgba(227, 232, 225, 0.7); /* Adding a semi-transparent white background to improve readability */
+    padding: 2px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#customInquiryForm input[type="text"],
+#customInquiryForm textarea,
+#customInquiryForm button {
+    width: calc(100% - 22px); /* Adjusting the width of the input fields and textarea */
+    /* Subtracting 22px accounts for the padding and border width */
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px; /* Margin-bottom for better spacing between elements */
+}
+
+#customInquiryForm button {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+#customInquiryForm button:hover {
+    background-color: #555;
+}
+
+textarea {
+    height: 100px;
+    resize: vertical; /* Allow vertical resizing */
+}
+
+#contact-info {
+    text-justify: inter-word;
+    text-align: center;
+}
+
+/* About page styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#about {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    margin-bottom: 20px;
+}
