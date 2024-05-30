@@ -156,7 +156,7 @@ footer {
 }
 
 #costResult {
-    color: white; /* Change this to a color that contrasts with your background */
+    color: red; /* Change this to a color that contrasts with your background */
     font-size: 20px; /* Optional: Increase font size for better readability */
     margin-top: 20px;
     padding: 10px; /* Add padding for better spacing */
